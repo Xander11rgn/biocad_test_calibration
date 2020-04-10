@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calibration</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="filter">
+        <span class="filter-title"
+          >Enter inventory number, guid or bims id</span
+        >
+        <section class="search">
+          <select name="filter" class="search-input">
+            <option value="A-001234">A-001234</option>
+          </select>
+          <button class="search-button">Search</button>
+        </section>
+      </section>
+
+      <section class="info">
+        <div class="left-info">
+          <div class="device-name">
+            <span class="main-name">
+              Аналитические весы OHAUS Adventurer AX324 (B715976163)
+            </span>
+            <div>
+              <img
+                class="info-icon"
+                src="img/info.svg"
+                width="22px"
+                height="22px"
+                alt="info"
+              />
+            </div>
+          </div>
+          <!-- /.device-name -->
+
+          <div class="choice">
+            <select class="list">
+              <option>1 month</option>
+            </select>
+            <div class="radios">
+              <label class="radio" for="radio1">
+                <input type="radio" name="radio" id="radio1" required />
+                <div class="radio__text">Calibration</div>
+              </label>
+              <label class="radio" for="radio2">
+                <input type="radio" name="radio" id="radio2" required />
+                <div class="radio__text">Measuring</div>
+              </label>
+              <label class="radio" for="radio3">
+                <input type="radio" name="radio" id="radio3" required />
+                <div class="radio__text">Using</div>
+              </label>
+            </div>
+            <!-- /.radios -->
+          </div>
+          <!-- /.choice -->
+          <div class="buttons">
+            <button class="report">Generate report</button>
+            <button class="pdf">Save pdf</button>
+          </div>
+          <!-- /.buttons -->
+        </div>
+        <!-- /.left-info -->
+
+        <div class="right-info">
+          <div class="textline">
+            <span class="caption">Тип оборудования: </span>
+            <span class="text">Весы</span>
+          </div>
+          <div class="textline">
+            <span class="caption">Статус: </span>
+            <span class="text">Готов к работе</span>
+          </div>
+          <div class="textline">
+            <span class="caption">Изготовитель: </span>
+            <span class="text">Ohaus</span>
+          </div>
+          <div class="textline">
+            <span class="caption">Модель: </span>
+            <span class="text">АХ-123</span>
+          </div>
+          <div class="textline">
+            <span class="caption">Ответственное подразделение (ремонт): </span>
+            <span class="text"
+              >Группа обслуживания лабораторного оборудования</span
+            >
+          </div>
+          <div class="textline">
+            <span class="caption">Эксплуатирующее подразделение: </span>
+            <span class="text">Химико-аналитическая лаборатория 2.0</span>
+          </div>
+          <div class="textline">
+            <span class="caption">МОЛ: </span>
+            <span class="text">Иванов Иван Иванович</span>
+          </div>
+          <div class="textline">
+            <span class="caption">Территория: </span>
+            <span class="text">г. Санкт-Петербург (Нойдорф)</span>
+          </div>
+          <div class="textline">
+            <span class="caption">Серийный номер: </span>
+            <span class="text">B715976163</span>
+          </div>
+          <div class="textline">
+            <span class="caption">GUID: </span>
+            <a href="#" class="ids">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a>
+          </div>
+          <div class="textline">
+            <span class="caption">Bims ID: </span>
+            <a href="#" class="ids">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a>
+          </div>
+          <div class="textline">
+            <span class="caption">Tam: </span>
+            <a href="#" class="ids"
+              >А-001234
+            </a>
+          </div>
+        </div>
+        <!-- /.right-info -->
+      </section>
+
+      <section class="report-summary">
+        <div class="report-title">
+          <span>Calibration report</span>
+        </div>
+
+        <div class="header">
+          <span style="margin-right: 80px;" class="report-header">Date</span>
+          <span style="margin-right: 120px;" class="report-header"
+            >Used buffer solutions</span
+          >
+          <span style="margin-right: 36px;" class="report-header"
+            >Slope, % <br />
+            Norm 95-105</span
+          >
+          <span style="margin-right: 31px;" class="report-header"
+            >Offset, mV <br />
+            Norm ±(0-20)</span
+          >
+          <span class="report-header">User</span>
+        </div>
+
+        <div class="global">
+          <div class="data-row">
+            <span class="date-col"
+              >04.10.19 <br />
+              10:23</span
+            >
+            <span class="col"
+              >В1: № 2000460789536: pH 1.09 <br />
+              В2: № 2000460789536: pH 2.00 <br />
+              В3: № 2000460789536: pH 4.01 <br />
+              В4: № 2000460789536: pH 7.00 <br />
+              В5: № 2000460789536: pH 9.21</span
+            >
+            <span class="col good">98.7 </span>
+            <span class="col good">-0.3 </span>
+            <span class="user-col">Иванов Генадий Петрович</span>
+          </div>
+          <div class="data-row">
+            <span class="date-col"
+              >04.10.19 <br />
+              10:23</span
+            >
+            <span class="col"
+              >В1: № 2000460789536: pH 1.09 <br />
+              В2: № 2000460789536: pH 2.00 <br />
+              В3: № 2000460789536: pH 4.01 <br />
+              В4: № 2000460789536: pH 7.00 <br />
+              В5: № 2000460789536: pH 9.21</span
+            >
+            <span class="col good">98.7 </span>
+            <span class="col good">-0.3 </span>
+            <span class="user-col">Петров Иван Генадьевич</span>
+          </div>
+          <div class="data-row">
+            <span class="date-col"
+              >04.10.19 <br />
+              10:23</span
+            >
+            <span class="col"
+              >В1: № 2000460789536: pH 1.09 <br />
+              В2: № 2000460789536: pH 2.00 <br />
+              В3: № 2000460789536: pH 4.01 <br />
+              В4: № 2000460789536: pH 7.00 <br />
+              В5: № 2000460789536: pH 9.21</span
+            >
+            <span class="col good">98.7 </span>
+            <span class="col good">-0.3 </span>
+            <span class="user-col">Петров Генадий Иванович</span>
+          </div>
+          <div class="data-row">
+            <span class="date-col"
+              >04.10.19 <br />
+              10:23</span
+            >
+            <span class="col"
+              >В1: № 2000460789536: pH 1.09 <br />
+              В2: № 2000460789536: pH 2.00 <br />
+              В3: № 2000460789536: pH 4.01 <br />
+              В4: № 2000460789536: pH 7.00 <br />
+              В5: № 2000460789536: pH 9.21</span
+            >
+            <span class="col bad">90.1 </span>
+            <span class="col good">-0.5 </span>
+            <span class="user-col">Генадьев Иван Петрович</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
